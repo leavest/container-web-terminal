@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.ant-menu {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
+.ant-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.search-input .ant-input {
+  height: 39px;
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.search-input .ant-input:focus {
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.search-input .ant-input:hover {
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}

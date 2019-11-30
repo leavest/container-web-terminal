@@ -1,0 +1,49 @@
+{
+  "name": "web-terminal",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "/terminal/static",
+  "dependencies": {
+    "antd": "^3.25.3",
+    "babel-plugin-import": "^1.13.0",
+    "customize-cra": "^0.9.1",
+    "eslint-plugin-prettier": "3.1.1",
+    "prettier": "1.19.1",
+    "react": "^16.12.0",
+    "react-app-rewired": "^2.1.5",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "xterm": "^4.2.0-vscode1",
+    "xterm-addon-fit": "^0.3.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "prebuild": "rm -f ../backend/static/css/* && rm -f ../backend/static/js/*",
+    "postbuild": "cp build/index.html ../backend/templates/ && cp -r build/static/* ../backend/static/",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,less,css,scss,md}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  }
+}
